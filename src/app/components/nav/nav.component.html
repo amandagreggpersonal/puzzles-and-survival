@@ -1,0 +1,31 @@
+<div class="app-nav">
+  <mat-drawer-container class="container"
+                        autosize>
+    <mat-drawer #drawer
+                class="sidenav"
+                color="primary"
+                mode="side">
+      <a i18n
+         [routerLink]="['/event-schedule']">
+        Event Schedule
+      </a>
+      <a [routerLink]="['/heroes']">
+        Heroes
+      </a>
+    </mat-drawer>
+
+    <div class="top-nav">
+      <p i18n>language dropdown goes here</p>
+      <button mat-mini-fab
+              color="primary"
+              (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <div class="app-container">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-drawer-container>
+</div>

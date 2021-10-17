@@ -1,0 +1,29 @@
+.app-nav {
+  .container {
+    height: 100vh;
+  }
+
+  .sidenav {
+    padding: 20px;
+    width: 10%;
+    box-shadow: 20px 0px 30px whitesmoke;
+
+    a {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .top-nav {
+    padding: 13px 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rosybrown;
+  }
+
+  .app-container {
+    margin: 20px 50px;
+  }
+}
