@@ -3,10 +3,8 @@
                         autosize>
     <mat-drawer #drawer
                 class="sidenav"
-                color="primary"
                 mode="side">
-      <a i18n
-         [routerLink]="['/event-schedule']">
+      <a [routerLink]="['/event-schedule']">
         Event Schedule
       </a>
       <a [routerLink]="['/heroes']">
@@ -15,7 +13,7 @@
     </mat-drawer>
 
     <div class="top-nav">
-      <p i18n>language dropdown goes here</p>
+      <p>language dropdown goes here</p>
       <button mat-mini-fab
               color="primary"
               (click)="drawer.toggle()">
