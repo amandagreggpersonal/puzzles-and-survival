@@ -1,4 +1,4 @@
-export interface Heros {
+export interface Heroes {
   name: string;
   starRating: number;
   color: string;
@@ -12,7 +12,7 @@ export interface Heros {
   riderLevel: string;
 }
 
-export const HERO_DATA: Heros[] = [
+export const HERO_DATA: Heroes[] = [
   { name: "Agent X", starRating: 5, color: "Purple", type: "Economy", troopSkill1: "Gather March Speed", troopSkill2: "Healing Steel Cost", troopSkill3: "Rally Size", ecoLevel: "131", fighterLevel: "", shooterLevel: "", riderLevel: "" },
   { name: "Atropos", starRating: 5, color: "Purple", type: "Fighter", troopSkill1: "Raid HP", troopSkill2: "Raid DEF", troopSkill3: "Raid ATK", ecoLevel: "", fighterLevel: "", shooterLevel: "", riderLevel: "" },
   { name: "Chia-hao", starRating: 5, color: "Blue", type: "Economy", troopSkill1: "Infirmary Cap", troopSkill2: "Heal Steel Cost", troopSkill3: "Troop Defense (Passive)", ecoLevel: "", fighterLevel: "131", shooterLevel: "131", riderLevel: "131" },
