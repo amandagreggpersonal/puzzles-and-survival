@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { MaterialModule } from './material/material.module';
+import { EventsComponent } from './components/events/events.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MaterialModule } from './material/material.module';
     EventsAndTipsComponent,
     NavComponent,
     EventScheduleComponent,
-    HeroesComponent
+    HeroesComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

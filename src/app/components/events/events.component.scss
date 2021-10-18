@@ -1,5 +1,9 @@
-.hero-table{
+.event-table{
   width: 100%;
+}
+
+.bold{
+  font-weight: 500;
 }
 
 .header-row{
@@ -67,13 +71,4 @@ tr.element-row:not(.expanded-row):active {
 
 .element-description-attribution {
   opacity: 0.5;
-}
-
-.bold{
-  font-weight: 500;
-}
-
-.blue-hero{
-  background-color: #2387AD;
-  opacity: 75%;
 }

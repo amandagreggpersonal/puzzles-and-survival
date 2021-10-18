@@ -1,4 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+$medium-device: 800px;
+$large-device: 1400px;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body {
+  height: 100%; }
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.4rem;
+}
+
+// @media only screen and (min-width: $medium-device) {
+//   html {
+//     font-size: 50%;
+//   }
+// }
+
+@media only screen and (min-width: $large-device) {
+  html {
+    font-size: 80%;
+  }
+}

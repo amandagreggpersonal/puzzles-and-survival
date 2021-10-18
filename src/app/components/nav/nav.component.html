@@ -4,16 +4,24 @@
     <mat-drawer #drawer
                 class="sidenav"
                 mode="side">
-      <a [routerLink]="['/event-schedule']">
+      <!-- <a [routerLink]="['/event-schedule']"
+         (click)="drawer.toggle()">
         Event Schedule
+      </a> -->
+      <a [routerLink]="['/heroes']"
+         (click)="drawer.toggle()">
+        Hero Info
       </a>
-      <a [routerLink]="['/heroes']">
-        Heroes
+      <a [routerLink]="['/events']"
+         (click)="drawer.toggle()">
+        Event Tips and Tricks
       </a>
     </mat-drawer>
 
     <div class="top-nav">
-      <p>language dropdown goes here</p>
+
+      <div class="header-text">WhiskeyRebels Tips, Tricks and Event Schedule</div>
+
       <button mat-mini-fab
               color="primary"
               (click)="drawer.toggle()">
