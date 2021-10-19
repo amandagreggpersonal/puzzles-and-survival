@@ -7,13 +7,15 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 
 const routes: Routes = [
   {
-    path: '', component: EventsAndTipsComponent, children: [
+    path: '', component: EventsAndTipsComponent,
+    children: [
+      { path: '', component: EventScheduleComponent },
       { path: 'event-schedule', component: EventScheduleComponent },
       { path: 'heroes', component: HeroesComponent },
       { path: 'events', component: EventsComponent }
     ]
   },
-  { path: '*', redirectTo: '' }
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

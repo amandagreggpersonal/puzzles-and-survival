@@ -4,10 +4,7 @@
     <mat-drawer #drawer
                 class="sidenav"
                 mode="side">
-      <!-- <a [routerLink]="['/event-schedule']"
-         (click)="drawer.toggle()">
-        Event Schedule
-      </a> -->
+
       <button mat-raised-button
               color="primary"
               [routerLink]="['/heroes']"
@@ -23,22 +20,30 @@
               class="nav-button">
         Event Tips and Tricks
       </button>
+
+      <button mat-raised-button
+              color="primary"
+              [routerLink]="['/event-schedule']"
+              (click)="drawer.toggle()"
+              class="nav-button">
+        Event Schedule
+      </button>
     </mat-drawer>
 
     <div class="top-nav">
-
-      <h1 class="header-text">WhiskeyRebels Tips, Tricks and Event Schedule</h1>
-
       <button mat-mini-fab
               color="primary"
               (click)="drawer.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
-    </div>
 
+      <h1 class="header-text">WhiskeyRebels Tips, Tricks and Event Schedule</h1>
+    </div>
     <div class="app-container">
       <router-outlet></router-outlet>
     </div>
 
   </mat-drawer-container>
+
+
 </div>

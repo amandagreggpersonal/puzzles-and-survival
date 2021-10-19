@@ -43,7 +43,7 @@ export class HeroesComponent implements AfterViewInit {
             case 'type':
                 return 'Type';
             case 'ecoLevel':
-                return 'Recommended Eco Level';
+                return 'Level for Economy';
             case 'fighterLevel':
                 return 'Level for Fighter Type'
             case 'shooterLevel':
