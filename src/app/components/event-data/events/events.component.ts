@@ -1,5 +1,5 @@
-import { AfterViewInit, ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
-import { MatSort, Sort } from '@angular/material/sort';
+import { Component, ViewChild } from '@angular/core';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Events } from './events';
@@ -30,7 +30,7 @@ export class EventsComponent {
   @ViewChild(MatSort) public sort: MatSort = new MatSort;
 
   constructor() {
-    this.createTipData();
+    this._createTipData();
   }
 
   public applyFilter(event: Event) {
@@ -52,13 +52,13 @@ export class EventsComponent {
     }
   }
 
-  getDate(date: Date): string {
+  public getDate(date: Date): string {
     const personalDate = moment(date).tz(Intl.DateTimeFormat().resolvedOptions().timeZone);
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     return days[personalDate.weekday()];
   }
 
-  createTipData(): void {
+  private _createTipData(): void {
     this._week1EventData = [
       // week 1
       { name: 'Ace: Resource Gatherer', startDate: new Date(moment.utc('2021-10-18 00:00:01').format()), heroReward: '', tips: 'Send Troops to Mill before reset so they arrive back at base just after reset. Pit Farm should end right after reset or recall at reset if under 2 hours, prevents being stolen', calculateThings: false },

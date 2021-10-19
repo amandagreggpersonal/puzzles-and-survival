@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EventScheduleComponent } from './components/event-schedule/event-schedule.component';
+import { EventScheduleComponent } from './components/event-data/event-schedule/event-schedule.component';
+import { EventsComponent } from './components/event-data/events/events.component';
 import { EventsAndTipsComponent } from './components/events-and-tips/events-and-tips.component';
-import { EventsComponent } from './components/events/events.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 
 const routes: Routes = [
