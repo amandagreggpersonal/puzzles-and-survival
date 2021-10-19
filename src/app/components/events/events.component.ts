@@ -53,13 +53,8 @@ export class EventsComponent {
   }
 
   getDate(date: Date): string {
-    console.log(date);
     const personalDate = moment(date).tz(Intl.DateTimeFormat().resolvedOptions().timeZone);
-    console.log(personalDate.weekday());
-    // return personalDate.format("dddd");
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    // console.log(date.getDay());
-    // return days[date.getDay()];
     return days[personalDate.weekday()];
   }
 
