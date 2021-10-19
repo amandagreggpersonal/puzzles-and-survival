@@ -1,78 +1,78 @@
 .week-one-event-table, .week-two-event-table{
-  margin: 20px 0;
+    margin: 20px 0;
     width: 100%;
 }
 
 .bold{
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .header-row{
-  font-weight: bold;
-  font-size: 1.4rem;
-  white-space: normal;
-  max-width: 80px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    white-space: normal;
+    max-width: 80px;
 }
 
 .center-cell{
-  text-align: center;
-  white-space: normal;
+    text-align: center;
+    white-space: normal;
 }
 
 .filter-input{
-  width: 50%;
+    width: 50%;
 }
 
 .element-name{
-  font-size: 1.6rem;
-  font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 tr.detail-row {
-  height: 0;
+    height: 0;
 }
 
 tr.element-row:not(.expanded-row):hover {
-  background: whitesmoke;
+    background: whitesmoke;
 }
 
 tr.element-row:not(.expanded-row):active {
-  background: #efefef;
+    background: #efefef;
 }
 
 .element-row td {
-  border-bottom-width: 0;
+    border-bottom-width: 0;
 }
 
 .element-detail {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .element-diagram {
-  min-width: 80px;
-  border: 2px solid black;
-  padding: 8px;
-  font-weight: lighter;
-  margin: 8px 0;
-  height: 104px;
-  opacity: 100%;
+    min-width: 80px;
+    border: 2px solid black;
+    padding: 8px;
+    font-weight: lighter;
+    margin: 8px 0;
+    height: 104px;
+    opacity: 100%;
 }
 
 .element-symbol {
-  font-weight: 600;
-  font-size: 4.0rem;
-  line-height: normal;
+    font-weight: 600;
+    font-size: 4.0rem;
+    line-height: normal;
 }
 
 .element-description {
-  padding: 16px;
-  opacity: 100%;
+    padding: 16px;
+    opacity: 100%;
 }
 
 .element-description-attribution {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .events-header{

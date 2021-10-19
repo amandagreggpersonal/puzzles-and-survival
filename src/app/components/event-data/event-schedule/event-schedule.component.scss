@@ -1,0 +1,68 @@
+.schedule-tables{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.week-one-event-table, .week-two-event-table, .week-three-event-table{
+    margin: 20px 0;
+    width: 100%;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.header-row{
+    font-weight: bold;
+    font-size: 1.4rem;
+    white-space: normal;
+    max-width: 80px;
+}
+
+.center-cell{
+    text-align: center;
+    white-space: normal;
+}
+
+.filter-input{
+    width: 50%;
+}
+
+.element-name{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+tr.detail-row {
+    height: 0;
+}
+
+tr.element-row:not(.expanded-row):hover {
+    background: whitesmoke;
+}
+
+tr.element-row:not(.expanded-row):active {
+    background: #efefef;
+}
+
+.element-description-attribution {
+    opacity: 0.5;
+}
+
+.events-header{
+    font-size: 1.6rem;
+}
+
+.week-heading{
+    display: flex;
+    flex-direction: column;
+}
+
+td.mat-cell{
+    padding: 5px;
+}
+
+h3{
+    margin: 0;
+}
