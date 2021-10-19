@@ -39,6 +39,10 @@ tr.element-row:not(.expanded-row):active {
   border-bottom-width: 0;
 }
 
+td.mat-cell{
+border-bottom-color: rgba(0,0,0,.8);
+}
+
 .element-detail {
   overflow: hidden;
   display: flex;
@@ -51,7 +55,6 @@ tr.element-row:not(.expanded-row):active {
   font-weight: lighter;
   margin: 8px 0;
   height: 104px;
-  opacity: 100%;
 }
 
 .element-symbol {
@@ -62,7 +65,6 @@ tr.element-row:not(.expanded-row):active {
 
 .element-description {
   padding: 16px;
-  opacity: 100%;
 }
 
 .element-description-attribution {
@@ -73,7 +75,22 @@ tr.element-row:not(.expanded-row):active {
   font-weight: 500;
 }
 
-.blue-hero{
-  background-color: #2387AD;
-  opacity: 75%;
+.blue-td {
+  background-color: rgba(35, 135, 173, .5);
+}
+
+.yellow-td {
+  background-color: rgba(222, 206, 108, .5);
+}
+
+.purple-td{
+  background-color: rgba(93,28,136, .5)
+}
+
+.green-td{
+  background-color: rgba(84,172,78, .5);
+}
+
+.red-td{
+background-color: rgba(134,23,35,.5);
 }

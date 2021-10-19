@@ -1,5 +1,6 @@
-.event-table{
-  width: 100%;
+.week-one-event-table, .week-two-event-table{
+  padding: 20px 0;
+    width: 100%;
 }
 
 .bold{
@@ -46,6 +47,7 @@ tr.element-row:not(.expanded-row):active {
 .element-detail {
   overflow: hidden;
   display: flex;
+  flex-direction: column;
 }
 
 .element-diagram {
@@ -71,4 +73,12 @@ tr.element-row:not(.expanded-row):active {
 
 .element-description-attribution {
   opacity: 0.5;
+}
+
+.events-header{
+    font-size: 1.6rem;
+}
+
+.table-header{
+    font-size: 2rem;
 }

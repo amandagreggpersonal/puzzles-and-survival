@@ -55,29 +55,4 @@ export class HeroesComponent implements AfterViewInit {
         }
     }
 
-    public getClass(elementColor: string): void {
-        console.log(elementColor);
-        switch (elementColor) {
-            case 'Blue':
-                console.log(document.getElementById('elementDetail')?.classList);
-                const elementToAddClassTo = document.getElementById('elementDetail');
-                if (elementToAddClassTo) {
-                    elementToAddClassTo.classList.add('blue-hero');
-                }
-                console.log(document.getElementById('elementDetail')?.classList);
-                break;
-            case 'Purple':
-            // return 'purple-hero';
-            case 'Yellow':
-            // return 'yellow-hero';
-            case 'Red':
-            // return 'red-hero';
-            case 'Green':
-            // return 'green-hero';
-            default:
-                // return '';
-                break;
-        }
-    }
-
 }
