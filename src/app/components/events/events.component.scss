@@ -1,5 +1,5 @@
 .week-one-event-table, .week-two-event-table{
-  padding: 20px 0;
+  margin: 20px 0;
     width: 100%;
 }
 
@@ -77,8 +77,4 @@ tr.element-row:not(.expanded-row):active {
 
 .events-header{
     font-size: 1.6rem;
-}
-
-.table-header{
-    font-size: 2rem;
 }

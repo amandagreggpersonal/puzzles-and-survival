@@ -1,6 +1,5 @@
 export interface Events {
     name: string;
-    week: number;
     startDate: Date; // this probably needs changing currently using MY timezone, starting is at 5pm at reset
     heroReward: string;
     tips: string;

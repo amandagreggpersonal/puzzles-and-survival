@@ -17,11 +17,10 @@ $medium-device: 800px;
 
   .top-nav {
     padding: 13px 20px;
-    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:cadetblue;
+    background-color:antiquewhite;
     font-size: 1.6rem;
   }
 
@@ -36,7 +35,7 @@ $medium-device: 800px;
 
     .sidenav {
       padding: 20px;
-      // width: 40%;
+      width: 220px;
 
       a {
         display: block;
@@ -48,4 +47,10 @@ $medium-device: 800px;
 
 .header-text{
   font-size: 2rem;
+}
+
+.nav-button {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
 }

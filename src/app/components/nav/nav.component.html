@@ -8,19 +8,26 @@
          (click)="drawer.toggle()">
         Event Schedule
       </a> -->
-      <a [routerLink]="['/heroes']"
-         (click)="drawer.toggle()">
+      <button mat-raised-button
+              color="primary"
+              [routerLink]="['/heroes']"
+              (click)="drawer.toggle()"
+              class="nav-button">
         Hero Info
-      </a>
-      <a [routerLink]="['/events']"
-         (click)="drawer.toggle()">
+      </button>
+
+      <button mat-raised-button
+              color="primary"
+              [routerLink]="['/events']"
+              (click)="drawer.toggle()"
+              class="nav-button">
         Event Tips and Tricks
-      </a>
+      </button>
     </mat-drawer>
 
     <div class="top-nav">
 
-      <div class="header-text">WhiskeyRebels Tips, Tricks and Event Schedule</div>
+      <h1 class="header-text">WhiskeyRebels Tips, Tricks and Event Schedule</h1>
 
       <button mat-mini-fab
               color="primary"

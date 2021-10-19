@@ -6,12 +6,7 @@
   font-weight: bold;
   font-size: 1.4rem;
   white-space: normal;
-  max-width: 80px;
-}
-
-.center-cell{
-  text-align: center;
-  white-space: normal;
+  max-width: 100%;
 }
 
 .filter-input{
@@ -39,8 +34,11 @@ tr.element-row:not(.expanded-row):active {
   border-bottom-width: 0;
 }
 
-td.mat-cell{
-border-bottom-color: rgba(0,0,0,.8);
+th.mat-header-cell{
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 5rem;
+    background-color: lightgray;
 }
 
 .element-detail {

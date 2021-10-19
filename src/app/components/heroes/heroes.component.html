@@ -1,3 +1,9 @@
+<h2 class="events-header bold">
+    This is for tracking all of the heros and what their skills are.
+</h2>
+<h3>
+    <b>Tip:</b> Decide one type of troop you want to focus on and train enough troops to only send that type to rallies. Same goes for heros, only use the troops that specialize in that one type of hero! Even if they are 3 star, it's still better than the generic troop boost from higher stared heros.
+</h3>
 <mat-form-field appearance="standard"
                 class="filter-input">
     <mat-label>Filter heroes by...</mat-label>
@@ -7,16 +13,17 @@
 </mat-form-field>
 
 <table mat-table
+       matSort
        multiTemplateDataRows
        [dataSource]="heroData"
        class="hero-table mat-elevation-z8"
-       matSortActive="name"
-       class="mat-elevation-z8">
+       matSortActive="name">
 
     <ng-container matColumnDef="{{column}}"
                   *ngFor="let column of displayedColumns">
         <th mat-header-cell
-            *matHeaderCellDef> {{getDisplayName(column)}} </th>
+            *matHeaderCellDef
+            mat-sort-header> {{getDisplayName(column)}} </th>
         <td mat-cell
             *matCellDef="let element"> {{element[column]}} </td>
     </ng-container>
@@ -36,14 +43,14 @@
                     <div class="element-type"> {{element.color}} </div>
                 </div>
                 <div class="element-description">
-                    <span class="troop-skill">Troop Skill 1: {{element.troopSkill1}}<br /></span>
-                    <span class="troop-skill">Troop Skill 2: {{element.troopSkill2}}<br /></span>
-                    <span class="troop-skill">Troop Skill 3: {{element.troopSkill3}}<br /><br /></span>
+                    <span class="troop-skill"><span class="bold">Troop Skill 1:</span> {{element.troopSkill1}}<br /></span>
+                    <span class="troop-skill"><span class="bold">Troop Skill 2:</span> {{element.troopSkill2}}<br /></span>
+                    <span class="troop-skill"><span class="bold">Troop Skill 3:</span> {{element.troopSkill3}}<br /><br /></span>
                     <div class="bold"> Recommended levels for specific builds:</div>
-                    <div class="economy-Level">Economy and troop size: {{(element.ecoLevel ? element.ecoLevel : 'Not needed')}} </div>
-                    <div class="fighterLevel">Fighter Spec: {{(element.fighterLevel ? element.fighterLevel : 'Not needed')}} </div>
-                    <div class="shooterLevel">Shooter Spec: {{(element.shooterLevel ? element.shooterLevel : 'Not needed')}} </div>
-                    <div class="riderLevel">Rider Spec: {{(element.riderLevel ? element.riderLevel : 'Not needed')}} </div>
+                    <div class="economy-Level"><span class="bold">Economy and troop size:</span> {{(element.ecoLevel ? element.ecoLevel : 'Not needed')}} </div>
+                    <div class="fighterLevel"><span class="bold">Fighter Spec:</span> {{(element.fighterLevel ? element.fighterLevel : 'Not needed')}} </div>
+                    <div class="shooterLevel"><span class="bold">Shooter Spec:</span> {{(element.shooterLevel ? element.shooterLevel : 'Not needed')}} </div>
+                    <div class="riderLevel"><span class="bold">Rider Spec:</span> {{(element.riderLevel ? element.riderLevel : 'Not needed')}} </div>
                 </div>
             </div>
         </td>
@@ -54,7 +61,7 @@
     <tr mat-row
         *matRowDef="let element; columns: displayedColumns;"
         class="element-row"
-        matTooltip="Click row to expand hero info!"
+        [matTooltip]="expandedElement !== element ? 'Click row to expand hero info!' : ''"
         [class.expanded-row]="expandedElement === element"
         (click)="expandedElement = expandedElement === element ? null : element">
     </tr>
