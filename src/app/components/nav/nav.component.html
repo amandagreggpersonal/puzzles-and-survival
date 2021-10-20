@@ -1,49 +1,38 @@
-<div class="app-nav">
-  <mat-drawer-container class="container"
-                        autosize>
-    <mat-drawer #drawer
-                class="sidenav"
-                mode="side">
+<mat-drawer #drawer
+            class="sidenav"
+            mode="side">
 
-      <button mat-raised-button
-              color="primary"
-              [routerLink]="['/heroes']"
-              (click)="drawer.toggle()"
-              class="nav-button">
-        Hero Info
-      </button>
+  <button mat-raised-button
+          color="primary"
+          [routerLink]="['/heroes']"
+          (click)="drawer.toggle()"
+          class="nav-button">
+    Hero Info
+  </button>
 
-      <button mat-raised-button
-              color="primary"
-              [routerLink]="['/events']"
-              (click)="drawer.toggle()"
-              class="nav-button">
-        Event Tips and Tricks
-      </button>
+  <button mat-raised-button
+          color="primary"
+          [routerLink]="['/events']"
+          (click)="drawer.toggle()"
+          class="nav-button">
+    Event Tips and Tricks
+  </button>
 
-      <button mat-raised-button
-              color="primary"
-              [routerLink]="['/event-schedule']"
-              (click)="drawer.toggle()"
-              class="nav-button">
-        Event Schedule
-      </button>
-    </mat-drawer>
+  <button mat-raised-button
+          color="primary"
+          [routerLink]="['/event-schedule']"
+          (click)="drawer.toggle()"
+          class="nav-button">
+    Event Schedule
+  </button>
+</mat-drawer>
 
-    <div class="top-nav">
-      <button mat-mini-fab
-              color="primary"
-              (click)="drawer.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
+<div class="top-nav">
+  <button mat-mini-fab
+          color="primary"
+          (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
 
-      <h1 class="header-text">WhiskeyRebels Tips, Tricks and Event Schedule</h1>
-    </div>
-    <div class="app-container">
-      <router-outlet></router-outlet>
-    </div>
-
-  </mat-drawer-container>
-
-
+  <h1 class="header-text">WhiskeyRebels Tips, Tricks and Event Schedule</h1>
 </div>
