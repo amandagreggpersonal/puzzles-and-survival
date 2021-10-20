@@ -42,7 +42,7 @@ export class EventScheduleComponent {
     const personalDate = moment(date).tz(userTimezone);
 
     if (userTimezone.includes('America')) {
-      return personalDate.format('MMM DD hh:00A');
+      return personalDate.format('MMM DD h:00A');
     } else {
       return personalDate.format('ddd DD MMM HH:00');
     }
@@ -74,11 +74,11 @@ export class EventScheduleComponent {
     this.week2Schedule = new MatTableDataSource(this._week2Schedule);
 
     this._week3Schedule = [
-      { name: 'Speaker Trap', startDate: new Date(moment.utc(week1StartDate + ' 00:00:01').add(13, "days").format()) },
-      { name: 'Alliance Party', startDate: new Date(moment.utc(week1StartDate + ' 00:00:01').add(13, "days").format()) },
+      { name: 'Speaker Trap', startDate: new Date(moment.utc(week1StartDate + ' 18:00:01').add(13, "days").format()) },
+      { name: 'Alliance Party', startDate: new Date(moment.utc(week1StartDate + ' 18:00:01').add(13, "days").format()) },
       { name: 'DR/DOA', startDate: new Date(moment.utc(week1StartDate + ' 18:00:01').add(14, "days").format()) },
       { name: 'DR/DOA', startDate: new Date(moment.utc(week1StartDate + ' 13:00:00').add(16, "days").format()) },
-      { name: 'Reservoir War', startDate: new Date(moment.utc(week1StartDate + ' 19:00:01').add(17, "days").format()) },
+      { name: 'Reservoir War', startDate: new Date(moment.utc(week1StartDate + ' 01:00:01').add(17, "days").format()) },
       { name: 'Speaker Trap', startDate: new Date(moment.utc(week1StartDate + ' 13:00:01').add(17, "days").format()) },
       { name: 'Alliance Party', startDate: new Date(moment.utc(week1StartDate + ' 13:00:01').add(17, "days").format()) }
     ]
