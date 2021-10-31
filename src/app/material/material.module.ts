@@ -21,7 +21,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 // import { MatDividerModule } from '@angular/material/divider';
 // import { MatExpansionModule } from '@angular/material/expansion';
 // import { MatGridListModule } from '@angular/material/grid-list';
-// import { MatListModule } from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
 // import { MatStepperModule } from '@angular/material/stepper';
 // import { MatTabsModule } from '@angular/material/tabs';
 // import { MatTreeModule } from '@angular/material/tree';
@@ -62,6 +62,7 @@ import { MatTableModule } from '@angular/material/table';
     MatSelectModule,
     MatMenuModule,
     MatToolbarModule,
+    MatListModule,
   ],
   exports: [
     MatSidenavModule,
@@ -75,6 +76,7 @@ import { MatTableModule } from '@angular/material/table';
     MatSelectModule,
     MatMenuModule,
     MatToolbarModule,
+    MatListModule,
   ]
 })
 export class MaterialModule { }

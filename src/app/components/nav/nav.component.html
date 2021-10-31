@@ -12,18 +12,35 @@
 
   <button mat-raised-button
           color="primary"
-          [routerLink]="['/events']"
-          (click)="drawer.toggle()"
-          class="nav-button">
-    Event Tips and Tricks
-  </button>
-
-  <button mat-raised-button
-          color="primary"
           [routerLink]="['/event-schedule']"
           (click)="drawer.toggle()"
           class="nav-button">
     Event Schedule
+  </button>
+
+  <button mat-raised-button
+          color="accent"
+          [routerLink]="['/events']"
+          (click)="drawer.toggle()"
+          class="nav-button">
+    Weekly Event Tips
+  </button>
+
+
+  <button mat-raised-button
+          color="accent"
+          [routerLink]="['/doa']"
+          (click)="drawer.toggle()"
+          class="nav-button">
+    DOA Tips
+  </button>
+
+  <button mat-raised-button
+          color="accent"
+          [routerLink]="['/rw']"
+          (click)="drawer.toggle()"
+          class="nav-button">
+    Reservoir War Tips
   </button>
 </mat-drawer>
 

@@ -21,6 +21,7 @@ export class EventScheduleComponent {
   public displayedColumns: string[] = ['startDate', 'name'];
   public expandedElement: EventScheduleItems | null = null;
   public show24HourFormat: boolean = true;
+  public showDoa: boolean = false;
 
   private _week1Schedule: EventScheduleItems[] = [];
   public week1Schedule: MatTableDataSource<any> = new MatTableDataSource(this._week1Schedule);
@@ -49,7 +50,7 @@ export class EventScheduleComponent {
   }
 
   private _createTipData() {
-    const week1StartDate = '2021-10-12';
+    const week1StartDate = '2021-11-02';
 
     this._week1Schedule = [
       { name: 'DR/DOA', startDate: new Date(moment.utc(week1StartDate + ' 23:00:01').subtract(1, "days").format()) },
@@ -83,6 +84,10 @@ export class EventScheduleComponent {
       { name: 'Alliance Party', startDate: new Date(moment.utc(week1StartDate + ' 13:00:01').add(17, "days").format()) }
     ]
     this.week3Schedule = new MatTableDataSource(this._week3Schedule);
+  }
+
+  public openDoa(): void {
+    this.showDoa = !this.showDoa;
   }
 
 }

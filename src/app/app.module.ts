@@ -10,6 +10,8 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { MaterialModule } from './material/material.module';
 import { EventScheduleComponent } from './components/event-schedule/event-schedule.component';
 import { EventsComponent } from './components/events/events.component';
+import { DoaComponent } from './components/events/doa/doa.component';
+import { ReservoirWarComponent } from './components/events/reservoir-war/reservoir-war.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { EventsComponent } from './components/events/events.component';
     NavComponent,
     EventScheduleComponent,
     HeroesComponent,
-    EventsComponent
+    EventsComponent,
+    DoaComponent,
+    ReservoirWarComponent
   ],
   imports: [
     BrowserModule,
