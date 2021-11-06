@@ -12,6 +12,7 @@ import { EventScheduleComponent } from './components/event-schedule/event-schedu
 import { EventsComponent } from './components/events/events.component';
 import { DoaComponent } from './components/events/doa/doa.component';
 import { ReservoirWarComponent } from './components/events/reservoir-war/reservoir-war.component';
+import { BuildingTipsComponent } from './components/building-tips/building-tips.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ReservoirWarComponent } from './components/events/reservoir-war/reservo
     HeroesComponent,
     EventsComponent,
     DoaComponent,
-    ReservoirWarComponent
+    ReservoirWarComponent,
+    BuildingTipsComponent
   ],
   imports: [
     BrowserModule,

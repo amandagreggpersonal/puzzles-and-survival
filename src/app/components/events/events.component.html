@@ -1,5 +1,8 @@
 <h2 class="events-header bold">
-    This page contains a list of the main events. This is not a full list. To get tips about the event, please click on the row.
+    This page contains a list of the main events. This is not a full list. To get tips about the event, please click on
+    the row.<br />
+    Break Loose events are not listed due to them being straight forward and with them changing every 8 hours, it's
+    difficult to list them all.
 </h2>
 
 <mat-form-field appearance="standard"
@@ -45,6 +48,7 @@
     <ng-container matColumnDef="expandedDetail">
         <td mat-cell
             *matCellDef="let element"
+            class="description-td"
             [attr.colspan]="displayedColumns.length">
             <div class="element-detail"
                  id="elementDetail"

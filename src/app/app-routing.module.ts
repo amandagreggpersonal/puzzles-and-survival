@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BuildingTipsComponent } from './components/building-tips/building-tips.component';
 import { EventScheduleComponent } from './components/event-schedule/event-schedule.component';
 import { DoaComponent } from './components/events/doa/doa.component';
 import { EventsComponent } from './components/events/events.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'events', component: EventsComponent },
   { path: 'doa', component: DoaComponent },
   { path: 'rw', component: ReservoirWarComponent },
+  { path: 'building-tips', component: BuildingTipsComponent },
   { path: '**', redirectTo: '' }
 ];
 
