@@ -3,7 +3,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import moment from 'moment-timezone';
-import { EventScheduleItems } from './event-schedule-items';
+import { EventSchedule } from './event-schedule-items';
 
 @Component({
   selector: 'app-event-schedule',
@@ -19,17 +19,16 @@ import { EventScheduleItems } from './event-schedule-items';
 })
 export class EventScheduleComponent {
   public displayedColumns: string[] = ['startDate', 'name'];
-  public expandedElement: EventScheduleItems | null = null;
-  public show24HourFormat: boolean = true;
+  public expandedElement: EventSchedule | null = null;
   public showDoa: boolean = false;
 
-  private _week1Schedule: EventScheduleItems[] = [];
+  private _week1Schedule: EventSchedule[] = [];
   public week1Schedule: MatTableDataSource<any> = new MatTableDataSource(this._week1Schedule);
 
-  private _week2Schedule: EventScheduleItems[] = [];
+  private _week2Schedule: EventSchedule[] = [];
   public week2Schedule: MatTableDataSource<any> = new MatTableDataSource(this._week2Schedule);
 
-  private _week3Schedule: EventScheduleItems[] = [];
+  private _week3Schedule: EventSchedule[] = [];
   public week3Schedule: MatTableDataSource<any> = new MatTableDataSource(this._week3Schedule);
 
   @ViewChild(MatSort) public sort: MatSort = new MatSort;
@@ -60,7 +59,7 @@ export class EventScheduleComponent {
       { name: 'Reservoir War', startDate: new Date(moment.utc(week1StartDate + ' 15:00:01').add(3, "days").format()) },
       { name: 'Speaker Trap', startDate: new Date(moment.utc(week1StartDate + ' 18:00:01').add(3, "days").format()) },
       { name: 'Alliance Party', startDate: new Date(moment.utc(week1StartDate + ' 18:00:01').add(3, "days").format()) }
-    ]
+    ];
     this.week1Schedule = new MatTableDataSource(this._week1Schedule);
 
     this._week2Schedule = [
@@ -71,7 +70,7 @@ export class EventScheduleComponent {
       { name: 'Reservoir War', startDate: new Date(moment.utc(week1StartDate + ' 19:00:01').add(10, "days").format()) },
       { name: 'Speaker Trap', startDate: new Date(moment.utc(week1StartDate + ' 13:00:01').add(10, "days").format()) },
       { name: 'Alliance Party', startDate: new Date(moment.utc(week1StartDate + ' 13:00:01').add(10, "days").format()) }
-    ]
+    ];
     this.week2Schedule = new MatTableDataSource(this._week2Schedule);
 
     //   this._week3Schedule = [

@@ -1,4 +1,4 @@
-export interface EventScheduleItems {
+export interface EventSchedule {
     name: string;
     startDate: Date;
 }

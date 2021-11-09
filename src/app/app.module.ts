@@ -13,6 +13,7 @@ import { EventsComponent } from './components/events/events.component';
 import { DoaComponent } from './components/events/doa/doa.component';
 import { ReservoirWarComponent } from './components/events/reservoir-war/reservoir-war.component';
 import { BuildingTipsComponent } from './components/building-tips/building-tips.component';
+import { TimeZoneChaosComponent } from './components/time-zone-chaos/time-zone-chaos.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BuildingTipsComponent } from './components/building-tips/building-tips.
     EventsComponent,
     DoaComponent,
     ReservoirWarComponent,
-    BuildingTipsComponent
+    BuildingTipsComponent,
+    TimeZoneChaosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,44 @@
+.time-zone-tables{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.time-zone-table{
+    margin: 20px 0;
+    width: 100%;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.header-row{
+    font-weight: bold;
+    font-size: 1.4rem;
+    white-space: normal;
+    max-width: 80px;
+}
+
+.center-cell{
+    text-align: center;
+    white-space: normal;
+}
+
+.events-header{
+    font-size: 1.6rem;
+    margin-left: 10px;
+}
+
+.player-data-header{
+    display: flex;
+    flex-direction: column;
+}
+
+td.mat-cell{
+    padding: 10px;
+}
+
+h3{
+    margin: 0;
+}
