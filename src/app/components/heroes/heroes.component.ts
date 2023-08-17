@@ -18,7 +18,7 @@ import { Heroes, HERO_DATA } from './heroes';
 })
 
 export class HeroesComponent implements AfterViewInit {
-    public displayedColumns: string[] = ['name', 'type', 'ecoLevel', 'fighterLevel', 'shooterLevel', 'riderLevel'];
+    public displayedColumns: string[] = ['starRating', 'name', 'type', 'ecoLevel', 'fighterLevel', 'shooterLevel', 'riderLevel'];
     public heroData: MatTableDataSource<any> = new MatTableDataSource(HERO_DATA);
     public expandedElement: Heroes | null = null;
 
@@ -42,6 +42,8 @@ export class HeroesComponent implements AfterViewInit {
                 return 'Name';
             case 'type':
                 return 'Type';
+            case 'starRating':
+                return 'Star Rating';
             case 'ecoLevel':
                 return 'Level for Economy';
             case 'fighterLevel':

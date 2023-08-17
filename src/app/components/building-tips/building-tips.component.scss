@@ -1,29 +1,29 @@
-.misc-tip-table{
+.misc-tip-table {
     margin: 20px 0;
     width: 100%;
 }
 
-.bold{
+.bold {
     font-weight: 500;
 }
 
-.header-row{
+.header-row {
     font-weight: bold;
     font-size: 1.4rem;
     white-space: normal;
     max-width: 80px;
 }
 
-.center-cell{
+.center-cell {
     text-align: center;
     white-space: normal;
 }
 
-.filter-input{
+.filter-input {
     width: 50%;
 }
 
-.element-name{
+.element-name {
     font-size: 1.6rem;
     font-weight: 500;
 }
@@ -71,7 +71,7 @@ tr.element-row:not(.expanded-row):active {
     opacity: 100%;
 }
 
-.description-td{
+.description-td {
     background-color: whitesmoke;
 }
 
@@ -79,6 +79,6 @@ tr.element-row:not(.expanded-row):active {
     opacity: 0.5;
 }
 
-.events-header{
+.events-header {
     font-size: 1.6rem;
 }

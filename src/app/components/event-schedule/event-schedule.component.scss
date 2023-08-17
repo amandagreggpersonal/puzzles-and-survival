@@ -1,35 +1,37 @@
-.schedule-tables{
+.schedule-tables {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.week-one-event-table, .week-two-event-table, .week-three-event-table{
+.week-one-event-table,
+.week-two-event-table,
+.week-three-event-table {
     margin: 20px 0;
     width: 100%;
 }
 
-.bold{
+.bold {
     font-weight: 500;
 }
 
-.header-row{
+.header-row {
     font-weight: bold;
     font-size: 1.4rem;
     white-space: normal;
     max-width: 80px;
 }
 
-.center-cell{
+.center-cell {
     text-align: center;
     white-space: normal;
 }
 
-.filter-input{
+.filter-input {
     width: 50%;
 }
 
-.element-name{
+.element-name {
     font-size: 1.6rem;
     font-weight: 500;
 }
@@ -50,24 +52,34 @@ tr.element-row:not(.expanded-row):active {
     opacity: 0.5;
 }
 
-.events-header{
+.events-header {
     font-size: 1.6rem;
     margin-left: 10px;
 }
 
-.description{
+.description {
     margin-left: 10px;
 }
 
-.week-heading{
+.week-heading {
     display: flex;
     flex-direction: column;
 }
 
-td.mat-cell{
+td.mat-cell {
     padding: 10px;
+    pointer-events: none;
 }
 
-h3{
+h3 {
     margin: 0;
+}
+
+th.mat-header-cell {
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 5rem;
+    background-color: lightgray;
+    font-weight: bolder;
+    font-size: small;
 }

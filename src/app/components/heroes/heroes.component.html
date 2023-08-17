@@ -23,12 +23,12 @@
                   *ngFor="let column of displayedColumns">
         <th mat-header-cell
             *matHeaderCellDef
+            class="hero-header"
             mat-sort-header> {{getDisplayName(column)}} </th>
         <td mat-cell
             *matCellDef="let element"> {{element[column]}} </td>
     </ng-container>
 
-    <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
     <ng-container matColumnDef="expandedDetail">
         <td mat-cell
             *matCellDef="let element"
@@ -61,6 +61,7 @@
     <tr mat-row
         *matRowDef="let element; columns: displayedColumns;"
         class="element-row"
+        [ngClass]='element.color.toLowerCase() + "-tr"'
         [matTooltip]="expandedElement !== element ? 'Click row to expand hero info!' : ''"
         [class.expanded-row]="expandedElement === element"
         (click)="expandedElement = expandedElement === element ? null : element">

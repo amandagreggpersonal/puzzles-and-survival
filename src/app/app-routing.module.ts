@@ -6,22 +6,20 @@ import { DoaComponent } from './components/events/doa/doa.component';
 import { EventsComponent } from './components/events/events.component';
 import { ReservoirWarComponent } from './components/events/reservoir-war/reservoir-war.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
-import { TimeZoneChaosComponent } from './components/time-zone-chaos/time-zone-chaos.component';
 
 const routes: Routes = [
-  { path: '', component: EventScheduleComponent },
-  { path: 'event-schedule', component: EventScheduleComponent },
-  { path: 'heroes', component: HeroesComponent },
-  { path: 'events', component: EventsComponent },
-  { path: 'doa', component: DoaComponent },
-  { path: 'rw', component: ReservoirWarComponent },
-  { path: 'building-tips', component: BuildingTipsComponent },
-  { path: 'player-data', component: TimeZoneChaosComponent },
-  { path: '**', redirectTo: '' }
+    { path: '', component: EventScheduleComponent },
+    { path: 'event-schedule', component: EventScheduleComponent },
+    { path: 'heroes', component: HeroesComponent },
+    { path: 'events', component: EventsComponent },
+    { path: 'doa', component: DoaComponent },
+    { path: 'rw', component: ReservoirWarComponent },
+    { path: 'building-tips', component: BuildingTipsComponent },
+    { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }

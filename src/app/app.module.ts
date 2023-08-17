@@ -13,27 +13,25 @@ import { EventsComponent } from './components/events/events.component';
 import { DoaComponent } from './components/events/doa/doa.component';
 import { ReservoirWarComponent } from './components/events/reservoir-war/reservoir-war.component';
 import { BuildingTipsComponent } from './components/building-tips/building-tips.component';
-import { TimeZoneChaosComponent } from './components/time-zone-chaos/time-zone-chaos.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavComponent,
-    EventScheduleComponent,
-    HeroesComponent,
-    EventsComponent,
-    DoaComponent,
-    ReservoirWarComponent,
-    BuildingTipsComponent,
-    TimeZoneChaosComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavComponent,
+        EventScheduleComponent,
+        HeroesComponent,
+        EventsComponent,
+        DoaComponent,
+        ReservoirWarComponent,
+        BuildingTipsComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

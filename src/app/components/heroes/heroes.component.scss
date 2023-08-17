@@ -1,94 +1,114 @@
-.hero-table{
-  width: 100%;
+.hero-table {
+    width: 100%;
 }
 
-.header-row{
-  font-weight: bold;
-  font-size: 1.4rem;
-  white-space: normal;
-  max-width: 100%;
+.mat-header-cell:first-of-type {
+    padding-left: 5px;
 }
 
-.filter-input{
-  width: 50%;
+.filter-input {
+    width: 50%;
 }
 
-.element-name{
-  font-size: 1.6rem;
-  font-weight: 500;
+.element-name {
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 tr.detail-row {
-  height: 0;
+    height: 0;
 }
 
 tr.element-row:not(.expanded-row):hover {
-  background: whitesmoke;
-}
-
-tr.element-row:not(.expanded-row):active {
-  background: #efefef;
+    background: darkgray;
 }
 
 .element-row td {
-  border-bottom-width: 0;
+    border-bottom-width: 0;
 }
 
-th.mat-header-cell{
+th.mat-header-cell {
     white-space: normal;
     word-wrap: break-word;
     max-width: 5rem;
     background-color: lightgray;
+    font-weight: bolder;
+    font-size: small;
 }
 
 .element-detail {
-  overflow: hidden;
-  display: flex;
+    overflow: hidden;
+    display: flex;
 }
 
 .element-diagram {
-  min-width: 80px;
-  border: 2px solid black;
-  padding: 8px;
-  font-weight: lighter;
-  margin: 8px 0;
-  height: 104px;
+    min-width: 80px;
+    border: 2px solid black;
+    padding: 8px;
+    font-weight: lighter;
+    margin: 8px 0;
+    height: 104px;
 }
 
 .element-symbol {
-  font-weight: 600;
-  font-size: 4.0rem;
-  line-height: normal;
+    font-weight: 600;
+    font-size: 4.0rem;
+    line-height: normal;
 }
 
 .element-description {
-  padding: 16px;
+    padding: 16px;
 }
 
 .element-description-attribution {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
-.bold{
-  font-weight: 500;
+.bold {
+    font-weight: 500;
 }
 
 .blue-td {
-  background-color: rgba(35, 135, 173, .5);
+    background-color: rgba(35, 135, 173, .25);
 }
 
 .yellow-td {
-  background-color: rgba(222, 206, 108, .5);
+    background-color: rgba(222, 206, 108, .25);
 }
 
-.purple-td{
-  background-color: rgba(93,28,136, .5)
+.purple-td {
+    background-color: rgba(93, 28, 136, .25)
 }
 
-.green-td{
-  background-color: rgba(84,172,78, .5);
+.green-td {
+    background-color: rgba(84, 172, 78, .25);
 }
 
-.red-td{
-background-color: rgba(134,23,35,.5);
+.red-td {
+    background-color: rgba(134, 23, 35, .25);
+}
+
+.blue-tr {
+    background-color: rgba(35, 135, 173, .35);
+}
+
+.yellow-tr {
+    background-color: rgba(222, 206, 108, .35);
+}
+
+.purple-tr {
+    background-color: rgba(93, 28, 136, .35)
+}
+
+.green-tr {
+    background-color: rgba(84, 172, 78, .35);
+}
+
+.red-tr {
+    background-color: rgba(134, 23, 35, .35);
+}
+
+.hero-header {
+    position: sticky;
+    top: 0;
 }
